@@ -1,0 +1,8 @@
+menuconfig LIBCOQOSHV_SMEVENT
+	bool "libcoqoshv_smevent: COQOSHV State Manager Event Library"
+	default y
+	select LIBCOQOSHV_EXT
+	select LIBNOLIBC if !HAVE_LIBC
+	help
+		Library for bidirectional event notifications between
+		applications and the COQOS State Manager

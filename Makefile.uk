@@ -1,0 +1,5 @@
+$(eval $(call addlib_s,libcoqoshv_smevent,$(CONFIG_LIBCOQOSHV_SMEVENT)))
+
+LIBCOQOSHV_SMEVENT_SRCS-y += $(LIBCOQOSHV_SMEVENT_BASE)/src/smevent.c
+
+CINCLUDES-$(CONFIG_LIBCOQOSHV_SMEVENT) += -I$(LIBCOQOSHV_SMEVENT_BASE)/include/
